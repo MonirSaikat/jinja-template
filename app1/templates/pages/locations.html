@@ -1,0 +1,9 @@
+{% extends 'layouts/main.html' %}
+{% block title %} Locations {% endblock %}
+{% block pagetitle %} Locations {% endblock %}
+{% block content %}
+
+{% include 'includes/search.html' %}
+{% include 'includes/table.html' with cols=cols %}
+
+{% endblock %}

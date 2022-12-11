@@ -1,0 +1,108 @@
+.navbar {
+  height: 80px;
+}
+
+.navbar .center {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #000;
+}
+
+/* main wrapper */
+.wrapper {
+  margin: 10px;
+  position: relative;
+  min-height: calc(100vh - 180px);
+}
+
+.wrapper .sidebar {
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: 18px !important;
+  min-height: 100%;
+  border: 2px solid;
+  overflow-y: auto;
+}
+
+.wrapper .sidebar a.active {
+  background-color: transparent;
+  color: #000;
+  border-color: #ccc;
+  font-weight: 700;
+}
+
+.wrapper .page {
+  margin-left: 220px;
+  border: 2px solid;
+  padding: 1rem;
+  min-height: 100%;
+  height: 100%;
+}
+
+/* footer */
+footer {
+  margin-top: 2rem;
+  min-height: 80px;
+  background-color: #000;
+  font-size: 1.4rem;
+}
+
+
+/* form controls */
+.form-control,
+.form-select {
+  border: 1px solid #000 !important;
+  border-radius: 0 !important;
+}
+
+/* search */
+.search {
+  max-width: 600px;
+}
+
+/* modal */
+.modal table {
+  border-spacing: 10px !important;
+  border-collapse: unset;
+}
+
+.modal .form-control,
+.modal .form-select {
+  padding: 0px 8px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-brand img {
+    width: 140px;
+  }
+
+  .wrapper .sidebar {
+    background-color: #fff;
+    z-index: 10;
+    margin-bottom: 10px;
+    border: 0;
+    margin-top: -25px;
+    left: -100%;
+    padding-top: 10px;
+  }
+
+  .sidebar-opener {
+    display: inline-block !important;
+  }
+
+  .wrapper .sidebar .close {
+    display: inline !important;
+    border: 0;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .wrapper .page {
+    margin-left: 0;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,9 @@
+{% extends 'layouts/main.html' %}
+{% block title %} Customers {% endblock %}
+{% block pagetitle %} Customers {% endblock %}
+{% block content %}
+
+{% include 'includes/search.html' %}
+{% include 'includes/table.html' with cols=cols %}
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% load static %}
+{% with username='User Name' %}
+
+<nav class="navbar bg-light">
+  <div class="container-fluid">
+    <a href="{% url 'index' %}" class="navbar-brand">
+      <img src="{% static 'images/logo.jpg' %}" alt="logo" />
+    </a>
+    <a
+      class="center d-none d-md-block"
+      href="/"
+    >ValueNet Admin Portal</a>
+    <div>
+      <span class="me-2">
+        {{ username }}
+      </span>
+      <a
+        href="#"
+        class="btn btn-primary btn-outline">
+          logout
+        </a>
+    </div>
+  </div>
+</nav>
+
+{% endwith %}
